@@ -1,0 +1,50 @@
+#home {
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+
+            .fas {
+                color: $MAIN-COLOR;
+                padding-bottom: 0.3rem;
+            }
+        }
+    }
+
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+
+                &.stats-title {
+                    font-size: 1.5rem;
+                }
+
+                &.stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 3rem 0;
+
+                &:nth-child(odd) {
+                    background: $LIGHT-COLOR;
+                }
+                &:nth-child(even) {
+                    background: $MEDIUM-COLOR;
+                }
+            }
+            // .fas {
+            //     color: $MAIN-COLOR;
+            //     padding-bottom: 0.3rem;
+            // }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: $DARK-COLOR;
+}
+
+ul {
+    list-style: none;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}

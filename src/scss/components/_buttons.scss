@@ -1,0 +1,33 @@
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $MAIN-COLOR;
+    }
+
+    &-light {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $LIGHT-COLOR;
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: #f4f4f4;
+        background-color: $DARK-COLOR;
+    }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background-color: $MAIN-COLOR;
+}
