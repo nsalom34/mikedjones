@@ -16,7 +16,7 @@
     &-b {
         .stats {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
             li {
                 line-height: 2;
@@ -41,10 +41,57 @@
                     background: $MEDIUM-COLOR;
                 }
             }
-            // .fas {
-            //     color: $MAIN-COLOR;
-            //     padding-bottom: 0.3rem;
-            // }
+        }
+    }
+
+    &-c {
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+
+            // process-step
+            &-step {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 28px;
+                background: $MAIN-COLOR;
+                color: set-text-color($MAIN-COLOR);
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+            }
+
+            // process-icon
+            &-icon {
+                border-radius: 50%;
+                background: $DARK-COLOR;
+                color: set-text-color($DARK-COLOR);
+                padding: 2rem;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                &:hover {
+                    background: $MAIN-COLOR;
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+
+                    .process-step {
+                        background: $DARK-COLOR;
+                        color: set-text-color($DARK-COLOR);
+                    }
+                }
+            }
         }
     }
 }
