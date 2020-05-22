@@ -9,6 +9,10 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     background: #fff;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -28,4 +32,8 @@ h4 {
 
 img {
     width: 100%;
+}
+
+footer {
+    margin-top: auto;
 }

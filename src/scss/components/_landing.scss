@@ -18,6 +18,13 @@
         height: 5.5rem;
         border-bottom: 3px solid $MAIN-COLOR;
     }
+
+    &-wendys {
+        background: url('../img/wendys-baconcert.jpg') no-repeat center center /
+            cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $MAIN-COLOR;
+    }
 }
 
 #logo {
@@ -34,7 +41,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($color: #000, $alpha: 0.5);
+    background: rgba($color: #000, $alpha: 0.7);
     z-index: 1;
 }
 

@@ -2,6 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Mike Jones Video Director Portfolio Website"
+        />
+        <meta name="keywords" content="Mike Jones, Producer, Director, Video" />
+        <meta name="author" content="Nicolas Salom" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style/main.min.css" />
 
@@ -21,34 +27,48 @@
         <title>Mike Jones | Director & Producer</title>
     </head>
     <body>
-        <!-- HEADER -->
+        <!-- Nicolas Salom:
+            Minimalistic HTML & CSS markup for beautiful simple website  -->
         <header id="header-home">
-            <div class="container photo-container">
-                <nav id="main-nav">
-                    <img src="img/logo.png" id="logo" alt="" />
-                    <ul>
-                        <li><a href="index.html" class="current">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-content">
-                    <h1>
-                        Mike Jones:
-                        <span
-                            class="typed-txt-container"
-                            data-wait="3000"
-                            data-words='["Producer", "Director", "Videographer"]'
-                        ></span>
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi, doloremque! Labore quibusdam cupiditate sunt?
-                        Quidem.
-                    </p>
-                    <a href="work.html" class="btn-light my-2">View My Work</a>
+            <div class="container video-container">
+                <div class="video-landing">
+                    <video
+                        src="vid/mj_website_v3.mp4"
+                        autoplay
+                        muted
+                        loop
+                    ></video>
+                </div>
+                <div class="v-header-content">
+                    <nav id="main-nav">
+                        <img src="img/logo.png" id="logo" alt="" />
+                        <ul>
+                            <li>
+                                <a href="index.html" class="current">Home</a>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-content">
+                        <h1>
+                            Mike Jones:
+                            <span
+                                class="typed-txt-container"
+                                data-wait="3000"
+                                data-words='["Producer", "Director", "Videographer"]'
+                            ></span>
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sequi, doloremque! Labore quibusdam cupiditate
+                            sunt? Quidem.
+                        </p>
+                        <a href="work.html" class="btn-main my-2"
+                            >View My Work</a
+                        >
+                    </div>
                 </div>
             </div>
         </header>
@@ -113,7 +133,6 @@
                 </div>
             </div>
         </footer>
-
         <script src="js/typewriter.js"></script>
     </body>
 </html>
